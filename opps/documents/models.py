@@ -11,9 +11,7 @@ class Document(Container):
     archive = models.FileField(
         upload_to=get_file_path,
         max_length=255,
-        verbose_name=_(u'Archive'),
-        null=True,
-        blank=True)
+        verbose_name=_(u'Archive'))
 
     class Meta:
         verbose_name = _('Document')

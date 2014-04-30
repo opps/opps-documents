@@ -14,7 +14,7 @@ class Migration(SchemaMigration):
         # Adding model 'Document'
         db.create_table(u'documents_document', (
             (u'container_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['containers.Container'], unique=True, primary_key=True)),
-            ('archive', self.gf('django.db.models.fields.files.FileField')(max_length=255, null=True, blank=True)),
+            ('archive', self.gf('django.db.models.fields.files.FileField')(max_length=255)),
         ))
         db.send_create_signal(u'documents', ['Document'])
 
@@ -120,7 +120,7 @@ class Migration(SchemaMigration):
         },
         u'documents.document': {
             'Meta': {'ordering': "['-date_available']", 'object_name': 'Document', '_ormbases': [u'containers.Container']},
-            'archive': ('django.db.models.fields.files.FileField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
+            'archive': ('django.db.models.fields.files.FileField', [], {'max_length': '255'}),
             u'container_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['containers.Container']", 'unique': 'True', 'primary_key': 'True'})
         },
         u'images.image': {

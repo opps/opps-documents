@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[opps-documents.documents]
+file_filter = opps/documents/locale/<lang>/LC_MESSAGES/django.po
+source_file = opps/documents/locale/en/LC_MESSAGES/django.po
+source_lang = en

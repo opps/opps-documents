@@ -8,6 +8,7 @@ from opps.containers.admin import ContainerAdmin
 from opps.contrib.multisite.admin import AdminViewPermission
 
 from .forms import DocumentAdminForm
+from .models import Document
 
 
 @apply_opps_rules('documents')

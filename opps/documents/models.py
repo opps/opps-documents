@@ -19,4 +19,4 @@ class Document(Container):
         ordering = ['-date_available']
 
     def get_absolute_url(self):
-        return u'/{}'.format(self.archive.url)
+        return self.archive.url

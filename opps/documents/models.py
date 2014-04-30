@@ -17,3 +17,6 @@ class Document(Container):
         verbose_name = _('Document')
         verbose_name_plural = _('Documents')
         ordering = ['-date_available']
+
+    def get_absolute_url(self):
+        return u'/{}'.format(self.archive.url)

@@ -15,6 +15,7 @@ from .models import Document
 class DocumentAdmin(ContainerAdmin, AdminViewPermission):
     form = DocumentAdminForm
     raw_id_fields = ['channel', 'mirror_channel', 'main_image']
+    search_fields = ["title", "archive"]
     fieldsets = (
         (_(u'Identification'), {
             'fields': ('site', 'title', 'slug', 'get_http_absolute_url',

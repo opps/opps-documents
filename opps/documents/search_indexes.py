@@ -7,7 +7,7 @@ from .models import Document
 
 
 class DocumentIndex(SearchIndex, Indexable):
-    archive = CharField(document=True, use_template=True)
+    text = CharField(document=True, use_template=True)
     date_available = DateTimeField(model_attr='date_available')
     date_update = DateTimeField(model_attr='date_update')
 

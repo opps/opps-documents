@@ -1,0 +1,1 @@
+{% extends "search/indexes/articles/post_text.txt" %}
